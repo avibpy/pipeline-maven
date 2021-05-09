@@ -2,7 +2,9 @@ pipeline {
 
     agent any
     
-    
+    environment {
+            PASS = credentials('REGISTRY_PASS') 
+         }
 
     stages {
 
