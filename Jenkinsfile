@@ -19,7 +19,7 @@ pipeline {
 
             post {
                 success {
-                   archiveArtifacts artifacts: 'java-app/target/*.jar', fingerprint: true
+                   archiveArtifacts artifacts: 'simple-java-maven-app/target/*.jar', fingerprint: true
                 }
             }
         }
